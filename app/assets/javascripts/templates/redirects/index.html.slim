@@ -1,0 +1,30 @@
+.row
+  .col-lg-12
+    .widget
+      .widget-header
+        i.fa.fa-list
+        = Kms::Redirect.model_name.human(count: 1.1)
+        a.btn.btn-sm.btn-primary.pull-right ng-click="addRedirect()"
+          = I18n.t("add_redirect")
+      .widget-body.no-padding
+        .table-responsive
+          table.table
+            tbody
+              tr ng-repeat="redirect in redirects"
+                td style="width: 40%"
+                  span editable-text="redirect.source" e-name="source" e-form="editRedirectForm" e-required=""
+                    | {{ redirect.source || '#{Kms::Redirect.human_attribute_name(:source)}' }}
+                td style="width: 40%"
+                  span editable-text="redirect.destination" e-name="destination" e-form="editRedirectForm" e-required=""
+                    | {{ redirect.destination || '#{Kms::Redirect.human_attribute_name(:destination)}' }}
+                td
+                  form.form-buttons.form-inline.pull-right editable-form="" name="editRedirectForm" ng-show="editRedirectForm.$visible" onbeforesave="save($data, redirect)"
+                    button.btn.btn-primary ng-disabled="editRedirectForm.$waiting" type="submit"
+                      span class="glyphicon glyphicon-ok"
+                    button.btn.btn-default ng-click="editRedirectForm.$cancel()" ng-disabled="editRedirectForm.$waiting" type="button"
+                      span class="glyphicon glyphicon-remove"
+                  .btn-group.pull-right ng-show="!editRedirectForm.$visible"
+                    a.btn.btn-sm.btn-info ng-click="editRedirectForm.$show()"
+                      i.fa.fa-pencil
+                    a.btn.btn-sm.btn-danger ng-click="destroy(redirect)"
+                      i.fa.fa-times

@@ -1,0 +1,18 @@
+ru:
+  seo: "SEO"
+  add_redirect: "Добавить редирект"
+  activerecord:
+    models:
+      kms/redirect:
+        one: "Редирект"
+        few: "Редиректа"
+        many: "Редиректов"
+        other: "Редиректы"
+    attributes:
+      kms/page:
+        seo_title: "Meta Title"
+        seo_keywords: "Meta Keywords"
+        seo_description: "Meta Description"
+      kms/redirect:
+        source: "Откуда"
+        destination: "Куда"

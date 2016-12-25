@@ -21,7 +21,7 @@ RedirectsController = ($scope, $state, Restangular, $stateParams) ->
   $scope.destroy = (redirect)->
     if redirect.id?
       restangularizedRedirect = Restangular.restangularizeElement(null, redirect, 'redirects')
-      return unless confirm('Вы уверены?')
+      return unless confirm('<%= I18n.t(:are_you_sure) %>')
       restangularizedRedirect.remove().then ->
         $scope.redirects = _.without($scope.redirects, redirect)
     else

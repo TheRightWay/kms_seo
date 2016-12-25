@@ -8,7 +8,7 @@ angular.module('KMS').config ['$stateProvider', '$urlRouterProvider', ($statePro
             url: '/kms/redirects',
             views:
               "header":
-                template: "Редиректы"
+                template: "<%= Kms::Redirect.model_name.human(count: 1.1) %>"
               "@":
                 controller: 'RedirectsController',
                 controllerAs: 'redirects',

@@ -1,6 +1,6 @@
 ## KMS SEO
 
-Adds SEO support to KMS: meta tags fields, sitemap.xml generating, redirects, special {{ seo }} variable.
+Adds SEO support to KMS: meta tags fields for Pages, sitemap.xml generating, redirects, special {{ seo }} variable.
 
 Use "seo" object for accessing SEO settings for page or object.
 

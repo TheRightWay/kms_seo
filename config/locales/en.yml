@@ -1,0 +1,18 @@
+en:
+  seo: "SEO"
+  add_redirect: "Add Redirect"
+  activerecord:
+    models:
+      kms/redirect:
+        one: "Redirect"
+        few: "Redirects"
+        many: "Redirects"
+        other: "Redirects"
+    attributes:
+      kms/page:
+        seo_title: "Meta Title"
+        seo_keywords: "Meta Keywords"
+        seo_description: "Meta Description"
+      kms/redirect:
+        source: "Source/From"
+        destination: "Destination/To"

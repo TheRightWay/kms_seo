@@ -1,6 +1,7 @@
 en:
   seo: "SEO"
   add_redirect: "Add Redirect"
+  robots_txt: "Robots.txt"
   activerecord:
     models:
       kms/redirect:

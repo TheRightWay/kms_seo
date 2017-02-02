@@ -1,4 +1,5 @@
 ## KMS SEO
+[![Build Status](https://travis-ci.org/webgradus/kms_seo.svg?branch=master)](https://travis-ci.org/webgradus/kms_seo)
 
 Adds SEO support to KMS: additional fields for Pages (meta tags, h1), sitemap.xml generating, redirects, special {{ seo }} variable.
 

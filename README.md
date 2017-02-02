@@ -1,12 +1,14 @@
 ## KMS SEO
 
-Adds SEO support to KMS: meta tags fields for Pages, sitemap.xml generating, redirects, special {{ seo }} variable.
+Adds SEO support to KMS: additional fields for Pages (meta tags, h1), sitemap.xml generating, redirects, special {{ seo }} variable.
 
 Use "seo" object for accessing SEO settings for page or object.
 
         <title>{{ seo.title }}</title>
         <meta name="keywords" content="{{ seo.keywords }}">
         <meta name="description" content="{{ seo.description }}">
+        ...
+        <h1>{{ seo.h1 }}</h1>
 
 Also, this adds sitemap generation support (at /sitemap.xml)
 

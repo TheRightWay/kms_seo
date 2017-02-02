@@ -7,6 +7,7 @@ require 'shoulda/matchers'
 Combustion.initialize! :all
 
 require 'rspec/rails'
+require 'factory_girl_rails'
 require 'devise'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }

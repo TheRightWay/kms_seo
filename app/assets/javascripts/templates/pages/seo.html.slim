@@ -12,3 +12,6 @@ accordion close-others="true"
     .form-group
       label for="seo_description" = Kms::Page.human_attribute_name(:seo_description)
       input#seo_description.form-control type="text" ng-model="page.seo_description"
+    .form-group
+      label for="seo_h1" = Kms::Page.human_attribute_name(:seo_h1)
+      input#seo_h1.form-control type="text" ng-model="page.seo_h1"

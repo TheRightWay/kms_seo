@@ -21,5 +21,10 @@ module Kms
       return nil unless @seo_context.respond_to?(:seo_description)
       @seo_context.seo_description
     end
+
+    def h1
+      return nil unless @seo_context.respond_to?(:seo_h1)
+      @seo_context.seo_h1
+    end
   end
 end

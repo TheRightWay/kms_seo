@@ -14,6 +14,7 @@ ru:
         seo_title: "Meta Title"
         seo_keywords: "Meta Keywords"
         seo_description: "Meta Description"
+        seo_h1: "H1"
       kms/redirect:
         source: "Откуда"
         destination: "Куда"

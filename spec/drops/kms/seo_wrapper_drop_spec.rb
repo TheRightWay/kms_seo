@@ -4,7 +4,7 @@ module Kms
   describe SeoWrapperDrop do
     let!(:page) { FactoryGirl.create(:page) }
 
-    let(:request) { ActionController::TestRequest.new({host:  'example.com', "rack.input" => "wtf"}, ActionController::TestRequest.new_session) }
+    let(:request) { ActionController::TestRequest.new({host:  'example.com', "rack.input" => "wtf"}, ActionController::TestRequest.new_session, Kms::Public::PagesController) }
     let(:controller) do
       controller = Kms::Public::PagesController.new
       controller.request = request

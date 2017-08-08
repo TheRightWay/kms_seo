@@ -1,3 +1,7 @@
+## Version 1.0.2 2017-08-08
+
+* [fixed] previous fix was incorrect - neet to load entire generators.rb
+
 ## Version 1.0.1 2017-08-08
 
 * [fixed] for some reason was getting "uninitialized constant Rails::Generators::Base"

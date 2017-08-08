@@ -1,7 +1,7 @@
-## KMS SEO
-[![Build Status](https://travis-ci.org/webgradus/kms_seo.svg?branch=master)](https://travis-ci.org/webgradus/kms_seo)
+## APIQ SEO
+[![Build Status](https://travis-ci.org/apiqcms/kms_seo.svg?branch=master)](https://travis-ci.org/apiqcms/kms_seo)
 
-Adds SEO support to KMS: additional fields for Pages (meta tags, h1), sitemap.xml generating, redirects, special {{ seo }} variable.
+Adds SEO support to APIQ: additional fields for Pages (meta tags, h1), sitemap.xml generating, redirects, special {{ seo }} variable.
 
 Use "seo" object for accessing SEO settings for page or object.
 
@@ -37,7 +37,7 @@ Also, this adds sitemap generation support (at /sitemap.xml)
 
         bundle exec rails assets:precompile
 
-6. Restart KMS instance
+6. Restart APIQ instance
 
 ## Contributing
 

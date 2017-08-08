@@ -1,3 +1,9 @@
+## Version 1.0.0 2017-08-08
+
+* [added] documentation about 'seo' object/variable
+* [changed] install generator will remove default robots.txt
+* [changed] update APIQ Core (KMS) dependency to 1.0 
+
 ## Version 0.2.0 2017-02-02
 
 * [added] add special setting allowing to edit robots.txt - closes #2

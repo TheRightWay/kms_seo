@@ -10,3 +10,4 @@ test/dummy/.sass-cache
 *.swo
 *~
 .byebug_history
+Gemfile.lock

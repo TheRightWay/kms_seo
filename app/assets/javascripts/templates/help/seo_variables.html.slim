@@ -1,0 +1,35 @@
+h4 = I18n.t("liquor_help.variables_title")
+p
+  ul
+    li
+      var seo
+      p
+        span = I18n.t('liquor_help.variables.seo.main_description')
+      p
+        code ng-non-bindable=''
+          | &lt;title&gt;{{ seo.title }}&lt;/title&gt;
+          br
+          | &lt;meta name="keywords" content="{{ seo.keywords }}"&gt;
+          br
+          | &lt;meta name="description" content="{{ seo.description }}"&gt;
+          br
+          | ...
+          br
+          | &lt;h1&gt;{{ seo.h1 }}&lt;/h1&gt;
+      p
+        table.table
+          tr
+            th #{ I18n.t('liquor_help.property') } seo
+            th = I18n.t('liquor_help.description')
+          tr
+            td title
+            td = I18n.t('liquor_help.variables.seo.properties.title')
+          tr
+            td keywords
+            td = I18n.t('liquor_help.variables.seo.properties.keywords')
+          tr
+            td description
+            td = I18n.t('liquor_help.variables.seo.properties.description')
+          tr
+            td h1
+            td = I18n.t('liquor_help.variables.seo.properties.h1')

@@ -1,3 +1,4 @@
+require 'rails/generators/base'
 module KmsSeo
   class InstallGenerator < Rails::Generators::Base
     source_root File.expand_path('../../../../../', __FILE__)
